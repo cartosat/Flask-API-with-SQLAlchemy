@@ -97,10 +97,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"sakangupt@gmail.com\",\r\n    \"phone\": \" 7788990321\",\r\n    \"full_name\": \"Sakshi Gupta\",\r\n    \"password\" : \"Pass@1234\",\r\n    \"role\": \"Admin\",\r\n    \"status\": \"Active\"\r\n}"
+					"raw": "{\r\n    \"full_name\": \"Swaraj Gore\",\r\n    \"email\": \"swarajgo@gmail.com\",\r\n    \"password\" : \"Pass@1234\",\r\n    \"phone\": \"49857243857\",\r\n    \"role\": \"Admin\",\r\n    \"status\": \"Active\"\r\n}"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/update_admin/7",
+					"raw": "http://127.0.0.1:5000/update_admin/104",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -111,7 +111,7 @@
 					"port": "5000",
 					"path": [
 						"update_admin",
-						"7"
+						"104"
 					]
 				}
 			},
