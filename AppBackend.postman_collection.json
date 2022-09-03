@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "529ce6f2-f62c-49c3-9423-40d29de03753",
+		"name": "AppBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all_admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/all_admin/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"all_admin",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_admin",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete_admin/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete_admin",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sakangupt@gmail.com\",\r\n    \"phone\": \" 7788990011\",\r\n    \"full_name\": \"Sakshi Gupta\",\r\n    \"password\" : \"Pass@123\",\r\n    \"role\": \"Admin\",\r\n    \"status\": \"Active\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/add_admin/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"add_admin",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_admin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sakangupt@gmail.com\",\r\n    \"phone\": \" 7788990321\",\r\n    \"full_name\": \"Sakshi Gupta\",\r\n    \"password\" : \"Pass@1234\",\r\n    \"role\": \"Admin\",\r\n    \"status\": \"Active\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/update_admin/7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update_admin",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_with_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/101",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
