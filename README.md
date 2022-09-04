@@ -1,6 +1,5 @@
 # APIs for CRUD operation using Flask and SqlAlchemy ORM
-Flask_SqlAlchemy_APIs is a backend application which serve API's for basic `CRUD` operation. It is built using most lightweight framework `flask` and one of popular Object Relation 
-Mapper `SqlAlchemy`. I have used `mysql` as database in this app.
+Flask_SqlAlchemy_APIs is a backend application which serve API's for basic `CRUD` operation and uploading file. It is built using most lightweight framework `flask` and one of popular Object Relation Mapper `SqlAlchemy`. I have used `mysql` as database in this app.
 
 # High Level Diagram:- 
 ![HLD](https://user-images.githubusercontent.com/34335127/188273605-6274ea28-42cb-4dd9-842d-7e4f052e297e.jpg)
@@ -17,6 +16,7 @@ Mapper `SqlAlchemy`. I have used `mysql` as database in this app.
 3. Get information for admin with specific id.
 4. Update Admin Information.
 5. Delete Admin from Database.
+6) Upload file.
 
 ## Application logs for all 5 operations :-
 ![App Log](https://user-images.githubusercontent.com/34335127/188273685-66e3f06f-5593-40e2-892d-abed2a280e26.png)
@@ -66,12 +66,18 @@ Mapper `SqlAlchemy`. I have used `mysql` as database in this app.
 - Example :- [http://127.0.0.1:5000/admin/3](http://127.0.0.1:5000/admin/3) .
 - Image for reference :- ![delete_admin](https://user-images.githubusercontent.com/34335127/188273806-de04b435-031f-4035-9499-de90d77e6cd1.png)
 
+## 6. Upload file
+- This will be `POST` request and in postman under body section pass appropriate parameters as shown in below image.
+- Example :- [http://127.0.0.1:5000/upload_file](http://127.0.0.1:5000/upload_file) .
+- Image for reference :- ![upload_file](https://user-images.githubusercontent.com/34335127/188316322-10466154-66a4-47a2-b9c7-38f68c374726.png)
+
+
 # How to start Backend server
 - Clone Repo [https://github.com/cartosat/Flask_SqlAlchemy_APIs](https://github.com/cartosat/Flask_SqlAlchemy_APIs).
 - Database Setup :-
   - Install [MySQL Community (GPL)](https://www.mysql.com/downloads/) version for mysql database.
   - execute `virtual_studio.sql` to automatically create database.
-- Postman Setuo :-
+- Postman Setup :-
   - Install [PostMan](https://www.postman.com/downloads/).
   - Import `AppBackend.postman_collection,json` collection.
 - Python Setup :-
