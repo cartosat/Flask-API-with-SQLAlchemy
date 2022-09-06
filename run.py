@@ -9,6 +9,7 @@ from apis.add_admin import AddAdminListResource
 from apis.update_admin import UpdateAdminListResource
 from apis.delete_admin import DeleteAdminListResource
 from apis.upload_file import UploadImage
+from apis.admin_login import AdminLogin
 
 
 api.add_resource(SingleAdminListResource, "/admin/<int:_id>")
@@ -22,6 +23,8 @@ api.add_resource(UpdateAdminListResource, "/update_admin/<int:_id>")
 api.add_resource(DeleteAdminListResource, "/delete_admin/<int:admin_id>")
 
 api.add_resource(UploadImage, '/upload_file')
+
+api.add_resource(AdminLogin, "/admin_login")
 
 
 # Load home page.

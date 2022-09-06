@@ -1,5 +1,6 @@
 from flask_restful import Resource
 from model.TblAdmin import TblAdmin
+from authentication import token_required
 from ma import ma
 
 # Get all Admins
@@ -16,6 +17,7 @@ all_admin_schema = AllAdminSchema(many=True)
 
 
 class AllAdminListResource(Resource):
-    def get(self):
+    @token_required
+    def get(self, current_admin):
         admins = TblAdmin.query.all()
         return all_admin_schema.dump(admins)
