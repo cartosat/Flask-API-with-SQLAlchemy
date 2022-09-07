@@ -8,10 +8,20 @@
 		{
 			"name": "all_admin",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAxLCJlbWFpbCI6ImNhcnRvc2F0NEBnbWFpbC5jb20iLCJleHAiOjE2NjI1MTkzMjB9.b4Sa99B0J2Gt3NekASd-J2-2eKlOWJkTIha3tgy5BkY",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/all_admin/",
+					"raw": "http://127.0.0.1:5000/all_admin",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -21,8 +31,7 @@
 					],
 					"port": "5000",
 					"path": [
-						"all_admin",
-						""
+						"all_admin"
 					]
 				}
 			},
@@ -142,6 +151,70 @@
 					"path": [
 						"admin",
 						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload_file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/VSW/Desktop/ProfilePhoto.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/upload_file",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"upload_file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"cartosat4@gmail.com\",\r\n    \"password\" : \"Pass@123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin_login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin_login"
 					]
 				}
 			},
